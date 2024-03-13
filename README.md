@@ -21,3 +21,14 @@
 
 # CSS란 무엇인가?
 [CSS](https://namu.wiki/w/CSS)
+
+# 자바스크립트
+1. 자바스크립트란 무엇인가?
+* var - 중복 선언 가능, 재할당 가능
+* let - 중복 선언 불가능, 재할당 가능
+* const - 중복 선언 불가능, 재할당 불가능
+* Array type - 배열
+* Object type
+2. ES6 (ECMAScript6)  
+   [표준 ECMA-262]() (ECMA스크립트는 ECMA-262에 의해 표준화된 언어의 이름)
+3. 자바스크립트의 자료형
