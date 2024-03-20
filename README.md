@@ -32,3 +32,7 @@
 2. ES6 (ECMAScript6)  
    [표준 ECMA-262]() (ECMA스크립트는 ECMA-262에 의해 표준화된 언어의 이름)
 3. 자바스크립트의 자료형
+4. 자바스크립트의 연산자
+5. 자바스크립트 함수
+* function statement 형: 일반적 함수의 형태
+* Arrow function expression 형: 화살표 함수
