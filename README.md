@@ -1,4 +1,37 @@
 # 서민석 201930112
+
+## 5월 29일 강의
+### select 태그
+* select 태그도 taxtarea와 동일합니다.
+
+```js
+<select>
+  <option value="apple">사과</option>
+  <option value="banana">바나나</option>
+  <option value="grape">포도</option>
+  <option value="watermelon">수박</option>
+<select>
+```
+
+### File input 태그
+* File input 태그는 그 값이 읽기 전용이기 때문에 리액트에서 비제어 컴포넌트가 됩니다.
+
+```js
+<input type="file" />
+```
+
+### Input Null Value
+* 제어 컴포넌트에 value prop을 정해진 값을 넣으면 코드를 수정하지 않는 한 입력 값을 바꿀 수 없습니다.
+* 만약 value prop은 넣되 자유롭게 입력할 수 있게 만들고 싶다면 값이 undefined 또는 null을 넣어주면 됩니다.
+```js
+ReactDOM.render(<input value="hi" />, rootNode);
+
+setTimeout(function() {
+  ReactDOM.render(<input value={null} />, rootNode);
+}, 1000);
+```
+
+
 ## 5월 22일 강의
 ### 리스트
 * 목록
@@ -16,6 +49,11 @@
 ### 폼
 * 양식
 * 사용자로부터 입력을 받기 위해 사용하는 것
+
+### 제어 컴포넌트
+* 사용자가 입력한 값에 접근하고 제어할 수 있도록 해주는 컴포넌트
+* state를 사용하여 관리
+
 
 
 ## 5월 8일 강의
