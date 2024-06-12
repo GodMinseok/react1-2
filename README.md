@@ -1,10 +1,59 @@
 # 서민석 201930112
 
-## 6월 11일 강의
+## 6월 12일 강의
+### CSS
+1. CSS란?
+* CSS는 Cascading Style Sheets의 약자로 스타일링을 위한 언어
+* Cascading이란 계단식이라는 뜻으로 한 엘리먼트에여러 스타일이 적용될 경우 스타일 간의 충돌을 박기 위해 계단식으로 스타일을 적용시키는 규칙을 갖고있음
+* 하나의 스타일이 여러 개의 엘리먼트에 적용될 수도 있고, 하나의 엘리먼트에도 여러 개의 스타일이 적용될 수도 있다.
+* 엘리먼트에 스타일이 적용되는 규칙을 selector(선택자)라고 한다. CSS는 이 선택자와 스타일로 이루어짐
+
+2. CSS문법과 선택자
+* 선택자를 먼저 쓰고 다음에 적용할 스타일을 중괄호 안에 세미콜론으로 구분하여 하나씩 작성
+* 선택자는 HTML 엘리먼트를 직접 넣어도 되고, 엘리먼트의 조합 혹은 class의 형태로 작성 가능
+* 스타일은 property(속성)과 key value(키 값)로 이루어 지며, 이들은 콜론(:)으로 구분하고, 각 스타일은 세미콜론(;)으로 구분
+
+3. 레이아웃과 관련된 속성
+* 화면에 엘리먼트를 어떻게 배치할 것인지를 정의
+* 가장 중요한 속성은 display
+* 모든 엘리먼트는 기본 display속성을 갖고 있지만 이 기본 값을 변경 가능
+* none는 존재는 하지만 화면에 보이지 않는 것으로, 자바스크립트를 넣을 때 많이 사용
+* block은 세로로 정렬되며, with의 height를 갖을 수 있다. 크기와 상관 없이 한 줄을 점유
+* inline은 가로로 정렬되며, with의 height를 갖을 수 없다. 컨텐츠의 크기만큼 공간을 점유
+* inline-block는 기본적으로 inline의 특성을 갖지만, with와 height등 block의 특성을 사용 가능
+* flex는 컨테이너의 형태로 엘리먼트를 관리
+* 최근 들어서는 Grid를 많이 사용. Flex가 1차원적이면 Grid는 2차원적으로 관리가 가능
+* visibility 속성은 엘리먼트의 가시성을 정의
+
 ### Containment와 Specialization을 같이 사용하기
 * Containment를 위해서 props.children을 사용하고, Specialization을 위해 직접 정의한 props를 사용하면 됨
 * Dialog를 사용하는 SignUpDialong는 Specializtion을 위해 props인 title, message에 값을 넣어 주고 있고, 입력 받기 위해 input과 button을 사용한다
+* display:none은 엘리먼트의 영역이 보이지 않고, visibility:hidden는 차지하는 영역은 보인다.
+* flexed는 window에 상대적위치라고 정의 하지만 지금은 sticky로 바뀌었다.
+* relative는 상대적, absolute는 절대적 위치를 지정
+* font-size등 크기를 나타내는 단위로는 px, em, rem, vm등이 있다.
+* font-style의 속성값
+- normal: 일반적인 글자의 형태를 의미
+- italic: 글자가 기울어진 형태로 나타남
+- oblique: 글자가 비스듬한 형태로 나타남
 
+### styled-components
+* CSS문법을 그대로 사용하면서 결과물을 스타일링된 컴포넌트 형태로 만들어 주는 오프소스 라이브러리다
+* 컴포넌트의 개념을 사용하고 있어 리액트 개발에 많이 사용됨
+#### styled-components 기본 사용법
+* 태그드 템플릿 리터럴을 사용하여 구성 요소의 스타일을 지정
+* 태그드 템플릿 리터럴은 자바스크립트에서 제공하는 문법 중 하나로 리터럴을 템플릿 형태로 사용하는 것
+
+3. styled-component의 props 사용하기
+4. styled-component의 스타일 확장하기
+
+
+
+
+
+
+
+## 6월 11일 강의
 ### 상속에 대해서
 * 합성과 대비되는 개념으로 상속이 있음
 * 자식 클래스는 부모 클래스가 가진 변수나 함수 등의 속성을 모두 갖게 되는 개념
